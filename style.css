@@ -84,3 +84,7 @@ body {
 .weather-details p {
     font-size: 14px;
 }
+
+#locationBtn{
+    padding: 8px 10px;
+}
