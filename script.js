@@ -111,7 +111,7 @@ button.addEventListener("click", function() {
 }
 let locationBtn = document.getElementById("locationBtn");
 
-locationBtn.addEventListener("click", function () {
+ function  getUserLocation() {
 
     if (!navigator.geolocation) {
         alert("Geolocation is not supported by your browser.");
@@ -134,8 +134,9 @@ locationBtn.addEventListener("click", function () {
             console.log(error);
             alert("Location permission denied or location could not be found.");
         }
-    );
-});
+ );
+}
+getUserLocation();
 
 
 async function fetchWeatherByLocation(latitude, longitude) {
